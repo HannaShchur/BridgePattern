@@ -25,4 +25,8 @@ public class QuestionManager {
     public void display() {
         q.showAllQuestionsWithIndexes();
     }
+
+    public void displayById(int id) {
+        System.out.println(JavaQuestions.questions.get(id));
+    }
 }

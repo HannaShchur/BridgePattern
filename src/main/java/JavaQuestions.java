@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class JavaQuestions implements Question{
-    private final List<String> questions = new ArrayList<>();
+    public static final List<String> questions = new ArrayList<>();
     private int current = 0;
 
     @Override
