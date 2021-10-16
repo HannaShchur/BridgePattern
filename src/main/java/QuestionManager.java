@@ -25,4 +25,6 @@ public class QuestionManager {
     public void display() {
         q.showAllQuestionsWithIndexes();
     }
+
+
 }
