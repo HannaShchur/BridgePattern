@@ -5,6 +5,10 @@ public class JavaQuestions implements Question{
     public static final List<String> questions = new ArrayList<>();
     private int current = 0;
 
+    public JavaQuestions() {
+        this.addQuestions();
+    }
+
     @Override
     public void nextQuestion() {
         if(current<questions.size()-1) {
@@ -34,8 +38,9 @@ public class JavaQuestions implements Question{
         questions.remove(questionIndex);
     }
 
+
     @Override
-    public void addQuestion(String quest) {
+    public void addQuestions() {
         questions.add("What is class? ");
         questions.add("What is interface? ");
         questions.add("What is abstraction? ");
@@ -44,9 +49,7 @@ public class JavaQuestions implements Question{
 
     @Override
     public void showAllQuestionsWithIndexes() {
-        questions.forEach(q -> {
-            System.out.println(getIndexByQuestion(q) + q);
-        });
+        questions.forEach(System.out::println);
     }
 
     private int getIndexByQuestion(String question)  {

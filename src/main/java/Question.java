@@ -3,6 +3,6 @@ public interface Question {
     void previousQuestion();
     void newQuestion(String question);
     void deleteQuestion(int quest);
-    void addQuestion(String quest);
+    void addQuestions();
     void showAllQuestionsWithIndexes();
 }

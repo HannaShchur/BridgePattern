@@ -23,6 +23,7 @@ public class QuestionManager {
     }
 
     public void display() {
+        System.out.println("Question Paper: " + catalog);
         q.showAllQuestionsWithIndexes();
     }
 
